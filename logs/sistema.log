@@ -1,0 +1,40 @@
+2026-05-05 19:01:38,360 - INFO - 3 servicios creados correctamente.
+2026-05-05 19:01:38,363 - INFO - Sistema finalizado.
+2026-05-05 19:05:33,205 - INFO - 3 servicios creados correctamente.
+2026-05-05 19:05:33,308 - INFO - Sistema finalizado.
+2026-05-05 19:08:37,879 - INFO - Cliente creado: Ana García
+2026-05-05 19:08:37,880 - INFO - 3 servicios creados correctamente.
+2026-05-05 19:08:37,882 - INFO - Reserva confirmada para Ana García
+2026-05-05 19:08:37,882 - INFO - Proceso de confirmación ejecutado
+2026-05-05 19:08:37,883 - INFO - Reserva confirmada para Ana García
+2026-05-05 19:08:37,883 - INFO - Proceso de confirmación ejecutado
+2026-05-05 19:08:37,883 - INFO - Reserva confirmada para Ana García
+2026-05-05 19:08:37,883 - INFO - Proceso de confirmación ejecutado
+2026-05-05 19:08:37,885 - INFO - Reserva confirmada para Ana García
+2026-05-05 19:08:37,885 - INFO - Proceso de confirmación ejecutado
+2026-05-05 19:08:37,894 - INFO - Sistema finalizado.
+2026-05-05 19:10:32,530 - INFO - Cliente creado: Ana García
+2026-05-05 19:10:32,532 - INFO - 3 servicios creados correctamente.
+2026-05-05 19:10:32,538 - INFO - Sistema finalizado.
+2026-05-05 19:11:15,838 - INFO - Cliente creado: Ana García
+2026-05-05 19:11:15,841 - INFO - 3 servicios creados correctamente.
+2026-05-05 19:11:15,862 - INFO - Sistema finalizado.
+2026-05-05 19:12:22,901 - INFO - Cliente creado: Ana García
+2026-05-05 19:12:22,904 - INFO - 3 servicios creados correctamente.
+2026-05-05 19:12:22,915 - INFO - Sistema finalizado.
+2026-05-05 19:13:06,359 - INFO - Cliente creado: Ana García
+2026-05-05 19:13:06,360 - INFO - 3 servicios creados correctamente.
+2026-05-05 19:13:06,361 - INFO - Reserva confirmada para Ana García
+2026-05-05 19:13:06,361 - INFO - Proceso de confirmacion ejecutado.
+2026-05-05 19:13:06,362 - INFO - Reserva procesada: Ana García | $150,000
+2026-05-05 19:13:06,362 - INFO - Proceso de procesamiento ejecutado.
+2026-05-05 19:13:06,362 - INFO - Reserva confirmada para Ana García
+2026-05-05 19:13:06,363 - INFO - Proceso de confirmacion ejecutado.
+2026-05-05 19:13:06,363 - INFO - Reserva procesada: Ana García | $488,376
+2026-05-05 19:13:06,363 - INFO - Proceso de procesamiento ejecutado.
+2026-05-05 19:13:06,363 - ERROR - Error al confirmar reserva de Ana García
+2026-05-05 19:13:06,363 - INFO - Proceso de confirmacion ejecutado.
+2026-05-05 19:13:06,364 - INFO - Reserva confirmada para Ana García
+2026-05-05 19:13:06,364 - INFO - Proceso de confirmacion ejecutado.
+2026-05-05 19:13:06,364 - INFO - Reserva cancelada: Ana García - El cliente reagendó la cita
+2026-05-05 19:13:06,366 - INFO - Sistema finalizado.

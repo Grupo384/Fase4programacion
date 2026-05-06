@@ -1,8 +1,16 @@
+"""
+Módulo Cliente — Software FJ
+Persona 1: Clase Cliente con validaciones y encapsulación
+"""
+
 import re
 from modelos.entidad_base import EntidadBase
 from excepciones.excepciones import ClienteInvalidoError
 
+
 class Cliente(EntidadBase):
+    """Clase que representa un cliente del sistema Software FJ."""
+
     def __init__(self, nombre, email, telefono):
         super().__init__()
         self.nombre = nombre
@@ -16,7 +24,9 @@ class Cliente(EntidadBase):
     @nombre.setter
     def nombre(self, valor):
         if not valor or not valor.strip():
-            raise ClienteInvalidoError("Nombre vacío")
+            raise ClienteInvalidoError("El nombre no puede estar vacío.")
+        if len(valor.strip()) < 2:
+            raise ClienteInvalidoError("El nombre debe tener al menos 2 caracteres.")
         self._nombre = valor.strip()
 
     @property
@@ -26,9 +36,9 @@ class Cliente(EntidadBase):
     @email.setter
     def email(self, valor):
         patron = r"[^@]+@[^@]+\.[^@]+"
-        if not re.match(patron, valor):
-            raise ClienteInvalidoError("Email inválido")
-        self._email = valor
+        if not valor or not re.match(patron, valor):
+            raise ClienteInvalidoError(f"Email inválido: '{valor}'")
+        self._email = valor.lower()
 
     @property
     def telefono(self):
@@ -36,9 +46,13 @@ class Cliente(EntidadBase):
 
     @telefono.setter
     def telefono(self, valor):
-        if not valor.isdigit():
-            raise ClienteInvalidoError("Teléfono inválido")
-        self._telefono = valor
+        limpio = str(valor).replace(" ", "").replace("-", "")
+        if not limpio.lstrip("+").isdigit() or len(limpio) < 7:
+            raise ClienteInvalidoError(f"Teléfono inválido: '{valor}'")
+        self._telefono = limpio
 
-    def mostrar_info(self):
-        return f"Cliente: {self.nombre} - {self.email}"
+    def describir(self):
+        return f"Cliente: {self._nombre} | Email: {self._email} | Tel: {self._telefono}"
+
+    def __str__(self):
+        return self.describir()

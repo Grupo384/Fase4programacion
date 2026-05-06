@@ -6,7 +6,7 @@ class EntidadBase(ABC):
         self._id = str(uuid.uuid4())
 
     @abstractmethod
-    def mostrar_info(self):
+    def describir(self):
         pass
 
     @property
