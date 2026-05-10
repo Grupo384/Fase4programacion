@@ -13,6 +13,11 @@ def prueba_clientes():
 
     except Exception as e:
         print("Error capturado:", e)
+        registrar_log(str(e), "ERROR")
+    else:
+        registrar_log("Clientes creados correctamente", "INFO")
 
+    finally:
+        registrar_log("Finalizó prueba_clientes()", "INFO")
 if __name__ == "__main__":
     prueba_clientes()
