@@ -3,5 +3,5 @@ from datetime import datetime
 def registrar_log(mensaje, tipo="INFO"):
     fecha = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    with open("registros/sistema.log", "a", encoding="utf-8") as archivo:
+    with open("logs/sistema.log", "a", encoding="utf-8") as archivo:
         archivo.write(f"[{fecha}] [{tipo}] {mensaje}\n")
