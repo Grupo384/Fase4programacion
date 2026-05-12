@@ -1,4 +1,4 @@
-from modelos.cliente import Cliente
+from modelos.cliente import cliente
 from registros.logs import registrar_log
 
 def prueba_clientes():
